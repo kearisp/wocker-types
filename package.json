@@ -1,0 +1,30 @@
+{
+    "name": "@wocker/types",
+    "type": "commonjs",
+    "version": "0.0.1",
+    "author": "Kris Papercut <krispcut@gmail.com>",
+    "description": "Wocker types",
+    "license": "MIT",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "keywords": [
+        "wocker"
+    ],
+    "homepage": "https://kearisp.github.io/wocker",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kearisp/wocker-types.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kearisp/wocker-types/issues"
+    },
+    "scripts": {
+        "prepublishOnly": "npm run build",
+        "build": "tsc --project tsconfig.build.json",
+        "watch": "tsc -w --project tsconfig.build.json"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3"
+    }
+}
